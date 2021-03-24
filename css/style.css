@@ -4,9 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100&display=swap');
 
+a {
+  color: #000 !important;
+}
 /* Colors variables
     ==================================================*/
 @media (max-width: 767px) {
+  .contact-number {
+    justify-content: space-around;
+  }
   .features .second-feature {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -153,8 +159,8 @@
   width: 0%;
 }
 .search input[type=text]:focus ~ .symbol:after {
-  -webkit-clip-path: inset(0% 0% 0% 100%);
-          clip-path: inset(0% 0% 0% 100%);
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
   transition: -webkit-clip-path 0.04s linear 0.105s;
   transition: clip-path 0.04s linear 0.105s;
   transition: clip-path 0.04s linear 0.105s, -webkit-clip-path 0.04s linear 0.105s;
@@ -162,21 +168,19 @@
 
 .search input[type=text]:focus ~ .symbol .lens {
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 0;
+  left: 0;
   transform: translate(0, 0);
   fill: var(--primary-color);
   transition: top 0.5s ease 0.1s, left 0.5s ease 0.1s, fill 0.3s ease;
 }
 .search .symbol {
+  display: flex;
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 0;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 .search .symbol:before {
   content: "";
@@ -191,8 +195,8 @@
 .search .symbol:after {
   content: "";
   position: absolute;
-  top: 50px;
-  left: 21px;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -208,17 +212,16 @@
 .search .symbol .lens {
   fill: #000;
   stroke: none;
-  top: 50%;
-  left: 50%;
+  
 }
 
 .search .symbol .lens {
-  fill: #000;
-  width: 16px;
-  height: 16px;
+  fill: rgb(48, 47, 47);
+  width: 34px;
+  height: 23px;
   z-index: 2;
-  top: 24px;
-  left: 24px;
+  top: 0;
+  left: 0;
   transition: top 0.3s ease, left 0.3s ease, fill 0.2s ease 0.2s;
 }
 /* END searchbox */
@@ -532,6 +535,11 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
 }
+@media only screen and (max-width: 1000px) {
+  .hideon-sm {
+    display: none;
+  }
+}
 
 i.fab {
   font-size: 1.1rem;
@@ -542,6 +550,10 @@ i.fab {
   font-family: 'Poppins', sans-serif;
   color: rgb(61, 60, 60);
   text-transform: uppercase;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
 }
 
 .promo__header {
@@ -804,6 +816,10 @@ i.fab {
   bottom: 0;
   left: 0;
   background: #ed1c24;
+}
+
+svg {
+  margin: 7px;
 }
 
 .cases {
@@ -1433,6 +1449,7 @@ i.fab {
   }
   .contact-number {
     margin-bottom: 10px;
+    flex-direction: column;
   }
   .search input[type=text] {
     opacity: 1;
@@ -1450,6 +1467,7 @@ i.fab {
   }
 
   .fa-bars {
+    fill: #000 !important;
     font-size: 20px;
   }
   .card__collection .cards {
