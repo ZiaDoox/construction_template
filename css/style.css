@@ -7,6 +7,9 @@
 a {
   color: #000 !important;
 }
+.card {
+  border: none;
+}
 /* Colors variables
     ==================================================*/
 @media (max-width: 767px) {
