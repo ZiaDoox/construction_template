@@ -538,7 +538,8 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.788) 0%, rgba(255, 255, 255, 0.527) 22%, rgba(255,255,255,0.1) 100%);}
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.788) 0%, rgba(255, 255, 255, 0.427) 22%, rgba(255,255,255,0) 100%);
+}
 
 .promo__wrapper {
   height: 100vh;
@@ -607,10 +608,13 @@ i.fab {
 }
 
 .link {
-  font-size: 16px;
+  background: #f8f8f8;
+  font-size: 13px;
   color: rgb(56, 56, 56);
   letter-spacing: 1px;
   display: inline-block;
+  padding: 5px 15px 0 15px;
+  
   font-family: sans-serif !important;
   top: 3rem;
 }
@@ -620,7 +624,8 @@ i.fab {
 
 .link:hover {
   text-decoration: none;
-  color: #000;
+  color: #F7F7F7 !important;
+  background: rgb(31, 155, 68);
 }
 
 .features {
@@ -1318,6 +1323,9 @@ svg {
 }
 
 @media only screen and (max-width: 500px) {
+  .link {
+    font-size: 13px;
+  }
   .footer__block img {
     margin-top: 30px !important;
   }
