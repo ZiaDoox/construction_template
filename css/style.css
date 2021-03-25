@@ -558,7 +558,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background: rgb(255,255,255);
-  background: linear-gradient(0, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.589) 22%, rgba(255, 255, 255, 0.404) 50%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(0, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.678) 22%, rgba(255, 255, 255, 0.521) 30%, rgba(255, 255, 255, 0.470) 40%, rgba(255, 255, 255, 0.404) 50%,rgba(255,255,255,0) 100%);
 }
 
 .promo__wrapper {
