@@ -1720,7 +1720,7 @@ svg {
 /* SideBar */
 .msb {
   width: 200px;
-  background-color: #ffffff;
+  background-color: #ffffff96;
   position: fixed;
   left: 0;
   top: 0;
@@ -1756,6 +1756,7 @@ svg {
 .msb .navbar-nav li a {
   padding: 15px;
   color: #5f5f5f;
+  font-weight: bold;
 }
 .msb .navbar-nav li a .glyphicon, .msb .navbar-nav li a .fa {
   margin-right: 8px;
