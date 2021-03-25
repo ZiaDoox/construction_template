@@ -121,12 +121,12 @@ a {
 
   .services .services__header {
     font-size: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   .feedback .feedback__header {
     font-size: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -1665,7 +1665,8 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 .btn-primary {
-  background: #82B440 !important;
+  background: #a5e453 !important;
+  color: #fff !important;
 }
 .card__collection .cards--two__rect:before {
   content: "";
