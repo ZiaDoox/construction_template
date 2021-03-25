@@ -53,9 +53,9 @@
                 <ul class="contact-number navbar-nav">
                     <li class="hideon-sm">Call us: <strong class="clr-black">+21261404140</strong></li>
                     <li class="hideon-sm px-4">
-                        <i class="ml-5 fab fa-facebook-f"></i>
-                        <i class="ml-5 fab fa-instagram"></i>
-                        <i class="ml-5 fab fa-twitter"></i>
+                        <i class="ml-4 fab fa-facebook-f"></i>
+                        <i class="ml-4 fab fa-instagram"></i>
+                        <i class="ml-4 fab fa-twitter"></i>
                     </li>
                     <li class="search pr-2">
                         <input type="text" placeholder="search" />
@@ -80,7 +80,7 @@
                     </li>
                 </ul>
                 <!--msb: main sidebar-->
-                <div class="msb" id="msb">
+                <div class="msb hide" id="msb">
                     <nav class="navbar navbar-default" role="navigation">
                         <!-- Brand and toggle get grouped for better mobile display -->
                         <div class="navbar-header">
@@ -88,7 +88,7 @@
                                 <!-- Brand -->
                                 <div class="brand-name-wrapper">
                                     <a class="navbar-brand" href="#">
-                                        <img src="images/brand-logo.png" width='140' height="40" alt="Logo">
+                                        <img class='m-2'src="images/brand-logo.png" width='140' height="40" alt="Logo">
                                     </a>
                                 </div>
 
@@ -651,11 +651,24 @@
 
             $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
         });
-        (function () {
-            $('#msbo').on('click', function () {
-                $('body').toggleClass('msb-x');
-            });
-        }());
+        // (function () {
+        //     $('#msbo').on('click', function () {
+        //         $('body').toggleClass('hide msb-x');
+        //     });
+        // }());
+        $(window).on('load', function() {
+            var toggle = false;
+            $('#msbo').on('click', function() {
+                toggle = !toggle;
+                // $('body').toggleClass('msb-x', toggle)
+                if(toggle) {
+                    $('#msb').removeClass('hide');
+                }else {
+                    // $('body').removeClass('msb-x');
+                    $('#msb').addClass('hide')
+                }
+            })
+        })
     </script>
 
 
