@@ -4,6 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 a {
   color: #000 !important;
 }
@@ -445,21 +448,12 @@ a:hover {
   padding: 50px;
   position: fixed;
 }
-
-
-
-
-
-
-
-
 .header.scrolled {
   background-color: #fff !important;
   transition: background-color 500ms linear;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding: 20px;
   z-index: 20;
-  border: none;
 }
 
 .header__wrapper {
