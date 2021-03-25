@@ -458,6 +458,13 @@ a:hover {
   padding: 20px;
   z-index: 20;
 }
+@media only screen and (max-width: 400px) {
+  .header.scrolled {
+    padding: 10px;
+    transition: none;
+
+  }
+}
 
 .header__wrapper {
   display: -webkit-box;
