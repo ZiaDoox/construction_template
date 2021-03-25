@@ -866,7 +866,7 @@ svg {
 }
 
 .cases__header {
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   font-size: 4rem;
   color: #131316;
 }
@@ -897,7 +897,7 @@ svg {
 }
 
 .cases .case__name {
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -911,7 +911,7 @@ svg {
 .cases .case__info {
   position: relative;
   margin-top: 2rem;
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   line-height: 2em;
   color: #757575;
