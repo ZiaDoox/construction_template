@@ -10,6 +10,9 @@ a {
 /* Colors variables
     ==================================================*/
 @media (max-width: 767px) {
+  .card {
+    border: none !important;
+  }
   .contact-number {
     justify-content: space-around;
   }
