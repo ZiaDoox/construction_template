@@ -1317,6 +1317,15 @@ svg {
   color: #7AA93C;
 }
 
+@media only screen and (max-width: 500px) {
+  .footer__block img {
+    margin-top: 30px !important;
+  }
+  .footer__copyright {
+    margin-bottom: 30px !important;
+  }
+}
+
 .footer__submit {
   outline: none;
   margin-top: 1.5rem;
