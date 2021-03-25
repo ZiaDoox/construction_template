@@ -13,6 +13,10 @@ a {
 /* Colors variables
     ==================================================*/
 @media (max-width: 767px) {
+  .about-content {
+    text-align: center;
+    padding: 50px !important;
+  }
   .header__wrapper {
     display: flex !important;
     flex-direction: row !important;
@@ -544,9 +548,14 @@ a:hover {
 }
 @media only screen and (max-width: 1000px) {
   .hideon-sm {
-    display: none;
+    display: none !important;
   }
 
+}
+@media only screen and (max-width: 370px) {
+  .hide-img {
+    display: none !important;
+  }
 }
 
 i.fab {
