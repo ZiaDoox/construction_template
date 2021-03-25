@@ -10,6 +10,10 @@ a {
 /* Colors variables
     ==================================================*/
 @media (max-width: 767px) {
+  .header__wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+  }
   .card {
     border: none !important;
   }
@@ -230,14 +234,14 @@ a {
   .fa-bars {
     margin: 10px;
   }
-  .header .header__wrapper {
+  /* .header .header__wrapper {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center !important;
-  }
+  } */
 
   .header .header__contacts {
     margin-top: 2rem;
@@ -1437,6 +1441,12 @@ svg {
   margin-right: 1rem;  
 }
 
+@media (min-width: 1000px) {
+  .sidebar-socials {
+    display: none;
+  }
+}
+
 @media (max-width: 400px) { 
 
   .funfact-img img {
@@ -1469,6 +1479,7 @@ svg {
   }
   .logo {
     margin-bottom: 10px;
+    margin-right: 25px;
   }
   .contact-number {
     margin-bottom: 10px;
