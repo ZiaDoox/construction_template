@@ -152,6 +152,7 @@ a {
 .search input[type=text] {
   position: relative;
   /* width: var(--height); */
+  width: 150px;
   height: 30px;
   font: 400 16px "Varela Round", sans-serif;
   color: var(--text-color);

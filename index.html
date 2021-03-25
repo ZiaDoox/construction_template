@@ -675,6 +675,10 @@
                     // $('body').removeClass('msb-x');
                     $('#msb').addClass('hide')
                 }
+            });
+            $('body').on('click', function() {
+                console.log('hey');
+                $('#msb').removeClass('hide');
             })
         })
     </script>
