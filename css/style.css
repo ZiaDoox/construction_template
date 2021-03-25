@@ -552,6 +552,7 @@ a:hover {
   background: url("../images/promo-bg.jpg") center center/cover no-repeat;
 }
 
+
 .promo__overlay {
   z-index: 3;
   position: absolute;
