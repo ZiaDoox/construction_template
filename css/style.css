@@ -117,11 +117,11 @@ a {
 /* Search box */
 
 .search {
-  --background: transparent;
+  --background: #fff;
   --text-color: #414856;
   --primary-color: #82B440;
   --border-radius: 10px;
-  --width: 190px;
+  --width: 120px;
   --height: 50px;
   background: var(--background);
   width: auto;
@@ -134,7 +134,7 @@ a {
 }
 .search input[type=text] {
   position: relative;
-  width: var(--height);
+  /* width: var(--height); */
   height: 30px;
   font: 400 16px "Varela Round", sans-serif;
   color: var(--text-color);
@@ -150,14 +150,11 @@ a {
 .search input[type=text]:focus {
   z-index: 0;
   opacity: 1;
-  width: var(--width);
+  /* width: var(--width); */
   background: rgba(255, 255, 255, 0.438);
   border-radius: 20px;
 }
 
-.search input[type=text]:focus ~ .symbol::before {
-  width: 0%;
-}
 .search input[type=text]:focus ~ .symbol:after {
   -webkit-clip-path: inset(0% 0% 0% 0%);
           clip-path: inset(0% 0% 0% 0%);
@@ -1433,8 +1430,12 @@ svg {
   font-family: "Do Hyeon", sans-serif;
   overflow: hidden;
 }
+.search input[type=text] {
+  margin-right: 1rem;  
+}
 
 @media (max-width: 400px) { 
+
   .funfact-img img {
     max-height: 400px  !important;
     min-width: 90% !important;
@@ -1477,7 +1478,10 @@ svg {
     background: rgba(255, 255, 255, 0.438);
     border-radius: 20px;
   } */
-
+  .search input[type=text] {
+    width: 20px !important;
+    
+  }
   /* .search input[type=text] ~ .symbol .lens {
     position: absolute;
     top: 10px;
@@ -1669,7 +1673,7 @@ svg {
 /* SideBar */
 .msb {
   width: 200px;
-  background-color: #F5F7F9;
+  background-color: #ffffff;
   position: fixed;
   left: 0;
   top: 0;
