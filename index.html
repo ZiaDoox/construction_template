@@ -58,8 +58,8 @@
                         <i class="ml-4 fab fa-twitter"></i>
                     </li>
                     <div class="row">
-                        
-                        
+
+
                         <div class="col-sm-6">
                             <a href="##" id="msbo"><i class="ic fa fa-bars"></i></a>
                         </div>
@@ -74,13 +74,13 @@
                                 <!-- Brand -->
                                 <div class="brand-name-wrapper">
                                     <a class="navbar-brand" href="#">
-                                        <img class='m-2'src="images/brand-logo.png" width='140' height="40" alt="Logo">
+                                        <img class='m-2' src="images/brand-logo.png" width='140' height="40" alt="Logo">
                                     </a>
                                 </div>
-            
+
 
                             </div>
-                
+
                         </div>
                         <div class="search mr-1 mb-3 flex">
                             <input type="text" placeholder="search" />
@@ -664,23 +664,20 @@
         //         $('body').toggleClass('hide msb-x');
         //     });
         // }());
-        $(window).on('load', function() {
+        $(window).on('load', function () {
             var toggle = false;
-            $('#msbo').on('click', function() {
-                toggle = !toggle;
-                // $('body').toggleClass('msb-x', toggle)
-                if(toggle) {
-                    $('#msb').removeClass('hide');
-                }else {
-                    // $('body').removeClass('msb-x');
-                    $('#msb').addClass('hide')
-                }
+            $('#msbo').on('click', function () {
+                $('#msb').toggleClass('hide');
             });
-            $('body').on('click', function() {
-                console.log('hey');
-                $('#msb').removeClass('hide');
-            })
-        })
+        });
+        function handleMousePos(event) {
+            let mouseClickWidth = event.clientX;
+            if(mouseClickWidth >= 200 && !$('#msbo').is(event.target) && $('#msbo').has(event.target).length === 0) {
+                console.log(mouseClickWidth);
+                $('#msb').addClass('hide');
+            }
+        }
+        document.addEventListener("click", handleMousePos);
     </script>
 
 
