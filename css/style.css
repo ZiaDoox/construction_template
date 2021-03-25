@@ -629,7 +629,7 @@ i.fab {
 }
 
 .features__header {
-  font-family: "Prata";
+  font-family: "Poppins";
   font-size: 4rem;
   color: #F7F7F7;
 }
@@ -841,7 +841,7 @@ i.fab {
 .portfolio .slide-title {
   width: 35%;
   position: relative;
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   font-size: 2.4rem;
   color: #F7F7F7;
 }
@@ -969,7 +969,7 @@ svg {
 }
 
 .services__header {
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   font-size: 4rem;
   color: #F7F7F7;
 }
@@ -997,7 +997,7 @@ svg {
 
 .services__text {
   width: 50%;
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   line-height: 3rem;
   font-size: 1.5rem;
   color: #F7F7F7;
@@ -1027,7 +1027,7 @@ svg {
   background: none;
   border: none;
   border-bottom: 2px solid #ed1c24;
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   color: #757575;
 }
@@ -1050,7 +1050,7 @@ svg {
 }
 
 .feedback__header {
-  font-family: "Prata";
+  font-family: "Poppins", sans-serif;
   font-size: 4rem;
   color: #131316;
 }
@@ -1195,7 +1195,7 @@ svg {
 
 .feedback .slide-title {
   margin-top: 2rem;
-  font-family: "Prata";
+  font-family: "Poppins";
   font-size: 1.5rem;
 }
 
