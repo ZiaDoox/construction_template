@@ -539,12 +539,30 @@ a:hover {
   .hideon-sm {
     display: none;
   }
+
 }
 
 i.fab {
   color: #000;
   font-size: 1.1rem;
 }
+
+.sidebar-socials {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.side-menu-container {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
 
 .contact-number {
   font-size: 20px;
@@ -553,7 +571,7 @@ i.fab {
   text-transform: uppercase;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
 
 }
 
