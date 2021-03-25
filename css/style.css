@@ -1470,20 +1470,21 @@ svg {
     margin-bottom: 10px;
     flex-direction: column;
   }
-  .search input[type=text] {
+
+  /* .search input[type=text] {
     opacity: 1;
     width: var(--width);
     background: rgba(255, 255, 255, 0.438);
     border-radius: 20px;
-  }
+  } */
 
-  .search input[type=text] ~ .symbol .lens {
+  /* .search input[type=text] ~ .symbol .lens {
     position: absolute;
     top: 10px;
     left: 15px;
     transform: translate(0, 0);
     fill: var(--primary-color);
-  }
+  } */
 
   .fa-bars {
     fill: #000 !important;
