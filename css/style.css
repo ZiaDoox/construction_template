@@ -471,6 +471,11 @@ a:hover {
   }
 }
 
+.fas.fa-phone {
+  transform: rotate(90deg);
+  margin-right: 1rem;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,7 +558,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background: rgb(255,255,255);
-  background: linear-gradient(0, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.427) 22%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(0, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.589) 22%, rgba(255, 255, 255, 0.404) 50%,rgba(255,255,255,0) 100%);
 }
 
 .promo__wrapper {
@@ -610,7 +615,7 @@ i.fab:hover {
   text-transform: uppercase;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 
 }
 
