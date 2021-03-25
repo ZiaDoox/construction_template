@@ -458,6 +458,11 @@ a:hover {
   padding: 20px;
   z-index: 20;
 }
+
+.portfolio__wrapper h2 {
+  margin-bottom: 0 !important;
+  color: rgb(250, 241, 241);
+}
 @media only screen and (max-width: 400px) {
   .header.scrolled {
     padding: 10px;
@@ -849,7 +854,7 @@ i.fab:hover {
 
 .portfolio .slide-content {
   width: 50%;
-  margin-top: 3%;
+  margin-top: 1%;
   padding-right: 5%;
   font-family: "PT Sans Caption";
   font-size: 1rem;
